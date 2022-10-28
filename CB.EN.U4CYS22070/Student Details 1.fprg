@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 09:39:44 PM"/>
+        <attribute name="created" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTAtMjg7MDk6MzE6NDQgUE07MjUwNw=="/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTAtMjg7MDk6MzE6NTIgUE07MTtIUDtERVNLVE9QLThRTFAxUEQ7MjAyMi0xMC0yODswOToyNToyNiBBTTtTdHVkZW50IERldGFpbHMuZnByZzs3MTg5"/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTAtMjg7MDk6Mzk6NDQgUE07MTsyNjIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RollNo" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Roll No&quot;" newline="True"/>
+            <input variable="RollNo"/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Name&quot;" newline="True"/>
+            <input variable="Name"/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Address&quot;" newline="True"/>
+            <input variable="Address"/>
+            <declare name="BloodGroup" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Blood Group&quot;" newline="True"/>
+            <input variable="BloodGroup"/>
+            <declare name="PhoneNo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter Phone No&quot;" newline="True"/>
+            <input variable="PhoneNo"/>
+            <declare name="Department" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Department Assigned&quot;" newline="True"/>
+            <input variable="Department"/>
+            <declare name="HostelRoom" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Hostel Room Assigned&quot;" newline="True"/>
+            <input variable="HostelRoom"/>
+        </body>
+    </function>
+</flowgorithm>
