@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 10:18:47 AM"/>
+        <attribute name="created" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTAtMjg7MDk6MjU6MjYgQU07MjQ5NQ=="/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTAtMjg7MTA6MTg6NDcgQU07NTsyNjA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RollNo" type="String" array="False" size=""/>
+            <output expression="&quot;Enter Roll No&quot;" newline="True"/>
+            <comment text="Get input for roll no"/>
+            <input variable="RollNo"/>
+            <declare name="Name" type="String" array="False" size=""/>
+            <declare name="Address" type="String" array="False" size=""/>
+            <declare name="BloodGroup" type="String" array="False" size=""/>
+            <declare name="PhoneNo" type="Integer" array="False" size=""/>
+            <declare name="Department" type="String" array="False" size=""/>
+            <declare name="HostelRoom" type="String" array="False" size=""/>
+            <declare name="Sem" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter sem&quot;" newline="True"/>
+            <comment text="Get sem"/>
+            <input variable="Sem"/>
+            <declare name="SubjectCode" type="String" array="False" size=""/>
+            <output expression="&quot;Enter subject code&quot;" newline="True"/>
+            <input variable="SubjectCode"/>
+            <declare name="P1" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter P1 marks&quot;" newline="True"/>
+            <input variable="P1"/>
+            <declare name="P2" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter P2 marks&quot;" newline="True"/>
+            <input variable="P2"/>
+            <declare name="Total" type="Real" array="False" size=""/>
+            <assign variable="Total" expression="P1+P2"/>
+            <output expression="&quot;Total is &quot;&amp;Total" newline="True"/>
+            <declare name="Average" type="Real" array="False" size=""/>
+            <assign variable="Average" expression="(P1+P2)/2"/>
+            <output expression="&quot;Average is &quot;&amp;Average" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
