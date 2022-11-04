@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22070"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:13:21 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTExLTA0OzA5OjMwOjU5IEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTExLTA0OzExOjEzOjIxIEFNOzQ7MzE1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter coefficient of x^2 or a&quot;" newline="True"/>
+            <comment text="Get a"/>
+            <input variable="a"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter coefficient of x or b&quot;" newline="True"/>
+            <comment text="Get b"/>
+            <input variable="b"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter constant or c&quot;" newline="True"/>
+            <comment text="Get c"/>
+            <input variable="c"/>
+            <declare name="discriminant" type="Real" array="False" size=""/>
+            <assign variable="discriminant" expression="b^2-(4*a*c)"/>
+            <output expression="&quot;The discriminant is &quot;&amp;discriminant" newline="True"/>
+            <comment text="The discriminant will be calculated"/>
+            <declare name="d" type="Real" array="False" size=""/>
+            <assign variable="d" expression="discriminant^0.5"/>
+            <comment text="Root of discriminant will be calculated"/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <assign variable="x" expression="(-b+d)/2*a"/>
+            <output expression="&quot;One root is &quot;&amp;x" newline="True"/>
+            <comment text="First root will be shown"/>
+            <declare name="y" type="Real" array="False" size=""/>
+            <assign variable="y" expression="(-b-d)/2*a"/>
+            <output expression="&quot;The second root is &quot;&amp;y" newline="True"/>
+            <comment text="Second root will be shown"/>
+        </body>
+    </function>
+</flowgorithm>

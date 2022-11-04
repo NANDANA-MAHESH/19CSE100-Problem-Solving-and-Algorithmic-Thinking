@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22070"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:08:57 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTExLTA0OzEwOjA4OjQ0IEFNOzMwNTQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTExLTA0OzExOjA4OjU3IEFNOzI7MzE2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Dividend" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter number to be divided&quot;" newline="True"/>
+            <comment text="Get dividend"/>
+            <input variable="Dividend"/>
+            <declare name="Divisor" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the divisor&quot;" newline="True"/>
+            <comment text="Get divisor"/>
+            <input variable="Divisor"/>
+            <declare name="Quotient" type="Integer" array="False" size=""/>
+            <assign variable="Quotient" expression="Dividend/Divisor"/>
+            <comment text="Quotient will be calculated"/>
+            <declare name="Remainder" type="Integer" array="False" size=""/>
+            <assign variable="Remainder" expression="Dividend-(Divisor*Quotient)"/>
+            <output expression="&quot;The remainder is &quot;&amp;Remainder" newline="True"/>
+            <comment text="Remainder will be displayed"/>
+        </body>
+    </function>
+</flowgorithm>
