@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22070"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:14:50 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTExLTE4OzA4OjU1OjAzIEFNOzMwNjM="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTExLTE4OzExOjE0OjUwIEFNOzI7MzE2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Name" type="String" array="False" size=""/>
+            <output expression="&quot;Enter your name&quot;" newline="True"/>
+            <input variable="Name"/>
+            <declare name="AccNo" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter your account no&quot;" newline="True"/>
+            <input variable="AccNo"/>
+            <declare name="Balance" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter your account balance&quot;" newline="True"/>
+            <input variable="Balance"/>
+            <if expression="Balance&gt;500">
+                <then>
+                    <declare name="Pin" type="Integer" array="False" size=""/>
+                    <output expression="&quot;Enter your pin&quot;" newline="True"/>
+                    <input variable="Pin"/>
+                    <declare name="Amount" type="Real" array="False" size=""/>
+                    <output expression="&quot;Enter amount to be withdrawn&quot;" newline="True"/>
+                    <input variable="Amount"/>
+                    <declare name="MinBal" type="Real" array="False" size=""/>
+                    <assign variable="MinBal" expression="Balance-Amount"/>
+                    <if expression="MinBal&gt;100">
+                        <then>
+                            <output expression="&quot;Your current balance is &quot;&amp;MinBal" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Amount can't be withdrawn&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <declare name="Amount" type="Real" array="False" size=""/>
+                    <output expression="&quot;Enter amount to be withdrawn&quot;" newline="True"/>
+                    <input variable="Amount"/>
+                    <declare name="MinBal" type="Real" array="False" size=""/>
+                    <assign variable="MinBal" expression="Balance-Amount"/>
+                    <if expression="MinBal&gt;100">
+                        <then>
+                            <output expression="&quot;Your current balance is &quot;&amp;MinBal" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Amount can't be withdrawn&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
