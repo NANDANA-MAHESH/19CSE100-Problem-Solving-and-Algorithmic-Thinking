@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22070"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:17:51 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTEyLTAyOzA5OjA1OjM0IEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTEyLTAyOzA5OjE3OjUxIEFNOzE7MzE2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter n&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <while expression="i&lt;=n">
+                <assign variable="sum" expression="sum+i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;The sum is &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
