@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22070"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:37:29 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTEyLTAyOzA5OjU5OjI1IEFNOzMwNjY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTEyLTAyOzA5OjU5OjU5IEFNOzE7Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTEyLTAyOzA5OjI5OjU0IEFNO0FkZGl0aW9uIFRhYmxlLmZwcmc7ODE3Mw=="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MDsyMDIyMjNNQVlDMDEwNzsyMDIyLTEyLTAyOzEwOjM3OjI5IEFNOzI7MzE2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter number of terms for which you want Fibonacci Series&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <assign variable="j" expression="1"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="1"/>
+            <output expression="&quot;The Fibonacci Series is &quot;" newline="True"/>
+            <while expression="count&lt;=n">
+                <output expression="sum" newline="True"/>
+                <assign variable="count" expression="count+1"/>
+                <assign variable="i" expression="j"/>
+                <assign variable="j" expression="sum"/>
+                <assign variable="sum" expression="i+j"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
