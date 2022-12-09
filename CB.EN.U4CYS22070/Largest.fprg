@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:04:23 AM"/>
+        <attribute name="created" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTItMDk7MTA6NTQ6MDggQU07MjQ5MA=="/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTItMDk7MTA6NTQ6MTUgQU07MTtQQVZBTjtDVVNDVVRBOzIwMjItMTItMDk7MTA6MTM6MDEgQU07TEFSR0VTVF9OVU1CRVIuZnByZzs2NDM2"/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTItMDk7MTE6MDQ6MjMgQU07MTsyNTkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number of elements&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="Integers" type="Integer" array="True" size="n"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the value for element &quot;&amp;Index&amp;&quot; &quot;" newline="True"/>
+                <input variable="Integers[Index]"/>
+            </for>
+            <declare name="Larger" type="Integer" array="False" size=""/>
+            <declare name="Temp" type="Integer" array="False" size=""/>
+            <assign variable="Larger" expression="Integers[0]"/>
+            <for variable="index" start="1" end="n-1" direction="inc" step="1">
+                <assign variable="Temp" expression="Integers[index]"/>
+                <if expression="Temp&gt;Larger">
+                    <then>
+                        <declare name="C" type="Integer" array="False" size=""/>
+                        <assign variable="C" expression="Larger"/>
+                        <assign variable="Larger" expression="Temp"/>
+                        <assign variable="Temp" expression="C"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The largest number is &quot;&amp;Larger&amp;&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="HP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:08:16 AM"/>
+        <attribute name="created" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTItMDk7MDk6MTQ6NTAgQU07MjQ5MQ=="/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTItMDk7MDk6MjA6MTYgQU07MztIUDtERVNLVE9QLThRTFAxUEQ7MjAyMi0xMi0wNjswMjozNzoyOSBQTTtGcnVpdHMuZnByZzs2MzM5"/>
+        <attribute name="edited" value="SFA7REVTS1RPUC04UUxQMVBEOzIwMjItMTItMDk7MTE6MDg6MTYgQU07MjsyNTk4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <declare name="values" type="Integer" array="True" size="10"/>
+            <declare name="value" type="Integer" array="False" size=""/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter value for index = [&quot; &amp; index &amp; &quot;]&quot;" newline="True"/>
+                <input variable="value"/>
+                <assign variable="values[index]" expression="value"/>
+            </for>
+            <output expression="&quot;Array contents&quot;" newline="True"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Array content value [&quot; &amp; index &amp; &quot;] = &quot; &amp; values[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
